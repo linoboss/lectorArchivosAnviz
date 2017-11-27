@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>661</width>
+    <height>566</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Ventana principal</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QStackedWidget" name="stackedWidget">
+      <widget class="QWidget" name="page"/>
+      <widget class="QWidget" name="page_2"/>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>661</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuConfiguration">
+    <property name="title">
+     <string>Configuracion</string>
+    </property>
+    <addaction name="action_database"/>
+    <addaction name="action_schedules"/>
+    <addaction name="action_workers"/>
+    <addaction name="action_daysoff"/>
+   </widget>
+   <widget class="QMenu" name="menuVer">
+    <property name="title">
+     <string>Ver</string>
+    </property>
+    <addaction name="action_assistence"/>
+    <addaction name="action_registers"/>
+   </widget>
+   <addaction name="menuConfiguration"/>
+   <addaction name="menuVer"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action_database">
+   <property name="text">
+    <string>Base de datos</string>
+   </property>
+  </action>
+  <action name="action_registers">
+   <property name="text">
+    <string>Registros</string>
+   </property>
+  </action>
+  <action name="action_schedules">
+   <property name="text">
+    <string>Horarios</string>
+   </property>
+  </action>
+  <action name="action_workers">
+   <property name="text">
+    <string>Trabajadores</string>
+   </property>
+  </action>
+  <action name="action_daysoff">
+   <property name="text">
+    <string>Dias libres</string>
+   </property>
+  </action>
+  <action name="action_assistence">
+   <property name="text">
+    <string>Tabla de asistencias</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
